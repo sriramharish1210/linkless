@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+@import "tailwindcss";
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --void: #040508;
+  --ink: #080B12;
+  --card: #0C1018;
+  --surface: #111520;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.13);
+  --text: #EFF2F9;
+  --muted: #52596A;
+  --dim: #7E8A9F;
+  --signal: #4F7FFF;
+  --signal-glow: rgba(79, 127, 255, 0.18);
+  --signal-dim: rgba(79, 127, 255, 0.06);
+  --pulse: #7C3AED;
+  --danger: #EF4444;
+  --success: #22C55E;
+  --warn: #F59E0B;
+  --space: 'Space Grotesk', sans-serif;
+  --body: 'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(79, 127, 255, 0.25);
+  color: var(--text);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--void);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(79, 127, 255, 0.3);
+  border-radius: 2px;
+}
